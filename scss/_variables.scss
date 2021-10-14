@@ -1,0 +1,16 @@
+//Colors
+
+$color-primary-desaturated: hsl(0, 36%, 70%); //desaturated red
+$color-primary-soft: hsl(0, 93%, 68%); //soft red
+$color-neutral-dark: hsl(0, 6%, 24%); //dark grayish red
+
+//Gradients
+$gradient-primary: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient-secondary: linear-gradient(
+  135deg,
+  hsl(0, 80%, 86%),
+  hsl(0, 74%, 74%)
+);
+
+//Fonts
+$font-primary: "Josefin Sans", sans-serif;
