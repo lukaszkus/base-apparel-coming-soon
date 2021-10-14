@@ -9,4 +9,83 @@ html {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+.main {
+  width: 100%;
+}
+.main .logo {
+  padding: 30px;
+}
+.main .logo__img {
+  width: 100px;
+}
+.main .hero {
+  padding-bottom: 65px;
+}
+.main .hero__img {
+  width: 100%;
+}
+.main .content {
+  padding: 0 30px;
+  text-align: center;
+}
+.main .content__title {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  color: #413a3a;
+  padding-bottom: 20px;
+}
+.main .content__title span {
+  font-weight: 300;
+  color: #ce9797;
+}
+.main .content__txt {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ce9797;
+  line-height: 1.4;
+  padding-bottom: 40px;
+}
+.main .content__form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main .content__form input[type=email] {
+  padding: 16px 24px;
+  width: 100%;
+  border: 1px solid #ce9797;
+  border-radius: 28px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  background: transparent;
+}
+.main .content__form input[type=email]::-moz-placeholder {
+  color: #ce9797;
+}
+.main .content__form input[type=email]:-ms-input-placeholder {
+  color: #ce9797;
+}
+.main .content__form input[type=email]::placeholder {
+  color: #ce9797;
+}
+.main .content__form span {
+  padding: 11px 28px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 28px;
+  position: absolute;
+  right: 0;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 10px;
+}
 /*# sourceMappingURL=main.css.map */

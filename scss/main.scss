@@ -12,3 +12,76 @@ html {
   font-size: 16px;
   font-family: $font-primary;
 }
+
+body {
+  min-height: 100vh;
+  background: $gradient-primary;
+}
+
+.main {
+  width: 100%;
+  .logo {
+    padding: 30px;
+    &__img {
+      width: 100px;
+    }
+  }
+  .hero {
+    padding-bottom: 65px;
+    &__img {
+      width: 100%;
+    }
+  }
+  .content {
+    padding: 0 30px;
+    text-align: center;
+    &__title {
+      font-size: 2.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6rem;
+      color: $color-neutral-dark;
+      padding-bottom: 20px;
+      span {
+        font-weight: 300;
+        color: $color-primary-desaturated;
+      }
+    }
+    &__txt {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $color-primary-desaturated;
+      line-height: 1.4;
+      padding-bottom: 40px;
+    }
+    &__form {
+      display: flex;
+      align-items: center;
+      position: relative;
+      input[type="email"] {
+        padding: 16px 24px;
+        width: 100%;
+        border: 1px solid $color-primary-desaturated;
+        border-radius: 28px;
+        font-family: $font-primary;
+        font-weight: 600;
+        background: transparent;
+        &::placeholder {
+          color: $color-primary-desaturated;
+        }
+      }
+      span {
+        padding: 11px 28px;
+        background: $gradient-secondary;
+        border-radius: 28px;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 10px;
+}
