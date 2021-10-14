@@ -61,7 +61,7 @@ body {
         padding: 16px 24px;
         width: 100%;
         border: 1px solid $color-primary-desaturated;
-        border-radius: 28px;
+        border-radius: 30px;
         font-family: $font-primary;
         font-weight: 600;
         background: transparent;
@@ -69,12 +69,20 @@ body {
           color: $color-primary-desaturated;
         }
       }
-      span {
-        padding: 11px 28px;
+      button {
+        height: 100%;
+        min-width: 65px;
         background: $gradient-secondary;
-        border-radius: 28px;
+        border: none;
+        border-radius: 30px;
         position: absolute;
+        top: 0;
         right: 0;
+        box-shadow: 0 12px 10px rgba($color-primary-desaturated, 0.5);
+        &:hover {
+          background: hsl(0, 80%, 86%);
+          cursor: pointer;
+        }
       }
     }
   }
@@ -83,5 +91,5 @@ body {
 .attribution {
   text-align: center;
   font-size: 0.7rem;
-  padding: 10px;
+  padding: 20px;
 }

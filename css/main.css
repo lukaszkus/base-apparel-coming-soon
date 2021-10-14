@@ -61,7 +61,7 @@ body {
   padding: 16px 24px;
   width: 100%;
   border: 1px solid #ce9797;
-  border-radius: 28px;
+  border-radius: 30px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   background: transparent;
@@ -75,17 +75,25 @@ body {
 .main .content__form input[type=email]::placeholder {
   color: #ce9797;
 }
-.main .content__form span {
-  padding: 11px 28px;
+.main .content__form button {
+  height: 100%;
+  min-width: 65px;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-  border-radius: 28px;
+  border: none;
+  border-radius: 30px;
   position: absolute;
+  top: 0;
   right: 0;
+  box-shadow: 0 12px 10px rgba(206, 151, 151, 0.5);
+}
+.main .content__form button:hover {
+  background: #f8bfbf;
+  cursor: pointer;
 }
 
 .attribution {
   text-align: center;
   font-size: 0.7rem;
-  padding: 10px;
+  padding: 20px;
 }
 /*# sourceMappingURL=main.css.map */
