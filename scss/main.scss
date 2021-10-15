@@ -34,13 +34,13 @@ body {
   }
   .content {
     padding: 0 30px;
-    text-align: center;
     &__title {
       font-size: 2.6rem;
       text-transform: uppercase;
       letter-spacing: 0.6rem;
       color: $color-neutral-dark;
       padding-bottom: 20px;
+      text-align: center;
       span {
         font-weight: 300;
         color: $color-primary-desaturated;
@@ -52,12 +52,14 @@ body {
       color: $color-primary-desaturated;
       line-height: 1.4;
       padding-bottom: 40px;
+      text-align: center;
     }
     &__form {
       display: flex;
       align-items: center;
       position: relative;
-      input[type="email"] {
+      margin-bottom: 10px;
+      .form-input {
         padding: 16px 24px;
         width: 100%;
         border: 1px solid $color-primary-desaturated;
@@ -69,7 +71,11 @@ body {
           color: $color-primary-desaturated;
         }
       }
-      button {
+      .form-error-icon {
+        position: absolute;
+        right: 80px;
+      }
+      .form-submit-btn {
         height: 100%;
         min-width: 65px;
         background: $gradient-secondary;
@@ -85,11 +91,27 @@ body {
         }
       }
     }
+    .form-error-msg {
+      color: $color-primary-soft;
+      font-size: 0.8rem;
+      padding: 0 0 50px 26px;
+    }
   }
+}
+
+.d-none {
+  display: none;
 }
 
 .attribution {
   text-align: center;
   font-size: 0.7rem;
   padding: 20px;
+  color: $color-primary-desaturated;
+  a {
+    color: $color-primary-desaturated;
+  }
+  a:hover {
+    color: $color-neutral-dark;
+  }
 }

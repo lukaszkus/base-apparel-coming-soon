@@ -26,11 +26,12 @@
       <h1 class="content__title"><span>We're</span> coming soon</h1>
       <p class="content__txt">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
-      <div class="content__form">
-        <input type="email" placeholder="Email Address"/>
-        <img src="images/icon-error.svg" />
-        <button><img src="images/icon-arrow.svg" alt="arrow"/></button>
-      </div>
+      <form class="content__form" action="#">
+        <input class="form-input" name="email" placeholder="Email Address" />
+        <img class="form-error-icon d-none" src="images/icon-error.svg" />
+        <button class="form-submit-btn" type="submit"><img src="images/icon-arrow.svg" alt="arrow"/></button>
+      </form>
+      <p class="form-error-msg"></p>
     </div>
   </main>
 
@@ -40,5 +41,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
