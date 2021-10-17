@@ -77,9 +77,12 @@ body {
 .main .content__form .form-input::placeholder {
   color: #ce9797;
 }
+.main .content__form .form-input-error {
+  border: 2px solid #f96262;
+}
 .main .content__form .form-error-icon {
   position: absolute;
-  right: 80px;
+  right: 75px;
 }
 .main .content__form .form-submit-btn {
   height: 100%;

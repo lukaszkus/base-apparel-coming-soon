@@ -14,10 +14,13 @@ form.addEventListener('submit', (e) => {
   if(userEmail.value === '' || !emailIsValid(userEmail.value) || userEmail.value == null){
     messages.push("Please provide a valid email");
     errorIcon.classList.add('d-none');
+    userEmail.classList.remove('form-input-error');
   }
   if(messages.length > 0){
     e.preventDefault()
     error.innerText = messages.join(', ')
     errorIcon.classList.remove('d-none');
+    userEmail.classList.add('form-input-error');
+
   }
 });

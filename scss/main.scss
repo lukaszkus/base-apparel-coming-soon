@@ -71,9 +71,12 @@ body {
           color: $color-primary-desaturated;
         }
       }
+      .form-input-error {
+        border: 2px solid $color-primary-soft;
+      }
       .form-error-icon {
         position: absolute;
-        right: 80px;
+        right: 75px;
       }
       .form-submit-btn {
         height: 100%;
