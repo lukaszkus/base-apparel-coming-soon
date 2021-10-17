@@ -24,6 +24,11 @@ body {
 .main .logo__img {
   width: 100px;
 }
+@media (min-width: 500px) {
+  .main .logo__img {
+    width: 200px;
+  }
+}
 .main .hero {
   padding-bottom: 65px;
 }
@@ -93,7 +98,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  box-shadow: 0 12px 10px rgba(206, 151, 151, 0.5);
+  box-shadow: 0 15px 20px rgba(206, 151, 151, 0.5);
 }
 .main .content__form .form-submit-btn:hover {
   background: #f8bfbf;

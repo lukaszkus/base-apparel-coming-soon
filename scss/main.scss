@@ -24,6 +24,9 @@ body {
     padding: 30px;
     &__img {
       width: 100px;
+      @include tablet {
+        width: 200px;
+      }
     }
   }
   .hero {
@@ -87,7 +90,7 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        box-shadow: 0 12px 10px rgba($color-primary-desaturated, 0.5);
+        box-shadow: 0 15px 20px rgba($color-primary-desaturated, 0.5);
         &:hover {
           background: hsl(0, 80%, 86%);
           cursor: pointer;
