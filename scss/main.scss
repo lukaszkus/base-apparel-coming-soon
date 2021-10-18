@@ -27,6 +27,7 @@ body {
 }
 
 .main {
+  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   .hero {
@@ -104,74 +105,85 @@ body {
       padding: 0 0 50px 26px;
     }
   }
+  .attribution {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+    color: $color-primary-desaturated;
+    a {
+      color: $color-primary-desaturated;
+    }
+    a:hover {
+      color: $color-neutral-dark;
+    }
+  }
 }
 
 @include desktop {
   .logo {
     position: absolute;
-    left: calc((57vw - 455px) / 2);
-    top: 65px;
+    left: calc((57vw - 410px) / 2);
+    top: 10vh;
+    padding: 0;
     &__img {
       width: 160px;
     }
   }
   .main {
     flex-direction: row;
-    justify-content: center;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain center;
     .hero {
       width: 43%;
-      min-height: 100vh;
+      height: 100vh;
       background-image: url(../images/hero-desktop.jpg);
     }
     .content {
       width: 57%;
+      max-height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      margin-top: 200px;
-        font-size: 4rem;
+      margin-top: 20vh;
+      font-size: 4rem;
+      line-height: 1.1;
+      padding: 0 8vw;
+      &__title {
         text-align: left;
-        max-width: 400px;
-        line-height: 1.1;
+        width: 410px;
       }
       &__txt {
-        text-align: left;
-        max-width: 400px;
         line-height: 1.8;
+        text-align: left;
+        width: 410px;
       }
       &__form {
-        max-width: 420px;
-        display: block;
-        .form-input {
+        width: 410px;
+        .form-iput {
           padding: 22px 30px;
         }
         .form-error-icon {
-          right: 105px;
+          right: 95px;
         }
         .form-submit-btn {
-          min-width: 95px;
+          min-width: 85px;
         }
       }
+      .form-error-msg {
+        text-align: left;
+        width: 410px;
+        padding: 0 0 65px 32px;
+      }
+    }
+    .attribution {
+      text-align: left;
+      width: 410px;
     }
   }
 }
 
 .d-none {
   display: none;
-}
-
-.attribution {
-  text-align: center;
-  font-size: 0.7rem;
-  padding: 20px;
-  color: $color-primary-desaturated;
-  a {
-    color: $color-primary-desaturated;
-  }
-  a:hover {
-    color: $color-neutral-dark;
-  }
 }
