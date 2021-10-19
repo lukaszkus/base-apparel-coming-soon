@@ -122,6 +122,44 @@ body {
   color: #413a3a;
 }
 
+@media (min-width: 490px) {
+  .logo {
+    padding: 30px 60px;
+  }
+  .logo__img {
+    width: 130px;
+  }
+
+  .main {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+  .main .content {
+    margin: 0 auto;
+  }
+  .main .content__title {
+    font-size: 3rem;
+    line-height: 1.1;
+    width: 410px;
+  }
+  .main .content__txt {
+    width: 410px;
+  }
+  .main .content__form {
+    width: 410px;
+  }
+  .main .content__form .form-iput {
+    padding: 22px 30px;
+  }
+  .main .content__form .form-error-icon {
+    right: 95px;
+  }
+  .main .content__form .form-submit-btn {
+    min-width: 85px;
+  }
+}
 @media (min-width: 900px) {
   .logo {
     position: absolute;
@@ -153,13 +191,12 @@ body {
     align-items: center;
     margin-top: 14vh;
     font-size: 4rem;
-    line-height: 1.1;
     padding: 0 8vw;
   }
   .main .content__title {
     text-align: left;
-    width: 410px;
     font-size: 4rem;
+    width: 410px;
   }
   .main .content__txt {
     line-height: 1.8;
@@ -168,15 +205,6 @@ body {
   }
   .main .content__form {
     width: 410px;
-  }
-  .main .content__form .form-iput {
-    padding: 22px 30px;
-  }
-  .main .content__form .form-error-icon {
-    right: 95px;
-  }
-  .main .content__form .form-submit-btn {
-    min-width: 85px;
   }
   .main .content .form-error-msg {
     text-align: left;

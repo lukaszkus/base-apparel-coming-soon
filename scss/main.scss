@@ -119,6 +119,44 @@ body {
   }
 }
 
+@include tablet {
+  .logo {
+    padding: 30px 60px;
+    &__img {
+      width: 130px;
+    }
+  }
+  .main {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    .content {
+      margin: 0 auto;
+      &__title {
+        font-size: 3rem;
+        line-height: 1.1;
+        width: 410px;
+      }
+      &__txt {
+        width: 410px;
+      }
+      &__form {
+        width: 410px;
+        .form-iput {
+          padding: 22px 30px;
+        }
+        .form-error-icon {
+          right: 95px;
+        }
+        .form-submit-btn {
+          min-width: 85px;
+        }
+      }
+    }
+  }
+}
+
 @include desktop {
   .logo {
     position: absolute;
@@ -148,12 +186,11 @@ body {
       align-items: center;
       margin-top: 14vh;
       font-size: 4rem;
-      line-height: 1.1;
       padding: 0 8vw;
       &__title {
         text-align: left;
-        width: 410px;
         font-size: 4rem;
+        width: 410px;
       }
       &__txt {
         line-height: 1.8;
@@ -162,15 +199,6 @@ body {
       }
       &__form {
         width: 410px;
-        .form-iput {
-          padding: 22px 30px;
-        }
-        .form-error-icon {
-          right: 95px;
-        }
-        .form-submit-btn {
-          min-width: 85px;
-        }
       }
       .form-error-msg {
         text-align: left;
