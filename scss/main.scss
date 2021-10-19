@@ -133,7 +133,7 @@ body {
     flex-direction: row;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain center;
+    background-size: 57% auto;
     .hero {
       width: 43%;
       height: 100vh;
@@ -146,13 +146,14 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 20vh;
+      margin-top: 14vh;
       font-size: 4rem;
       line-height: 1.1;
       padding: 0 8vw;
       &__title {
         text-align: left;
         width: 410px;
+        font-size: 4rem;
       }
       &__txt {
         line-height: 1.8;
